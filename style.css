@@ -3,31 +3,51 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
 
 
-body {
+body, html {
     font-family: 'Roboto', sans-serif;
     background-color: #383838;
     color: whitesmoke;
     height: 100%;
+    margin: 0;
     min-width: 320px;
     width: auto !important;
+}
+
+#first {
+    /*Load the image as the bg and set transparency for img only*/
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(./joe.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 #nav-bar {
     font-family: 'Major Mono Display', monospace;
     width:100%;
-    margin-top: 1.5rem;
-    border-bottom: 1px solid white;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    /* margin-top: 1.5rem; */
+    border-bottom: 1px outset white;
+    /* padding-top: 0.5rem; */
+    padding: 0.5rem 0 0 0;
     /* background-color: rgb(36, 140, 144); */
+    display: flex;
+    flex-direction:column;
 }
 
-.top-bar {
-    text-align: center;
-    border: 0px solid white;
-    width: 5rem;
-    padding: 0.5rem 0.5rem;
-    margin-left: 85%;
+nav li {
+	display: inline-block;
+    padding-right: 50px;
+    float: right;
+}
+	
+nav li a {
+    font-size: 12px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    color: rgb(252, 252, 202);
 }
 
 a {
@@ -59,8 +79,7 @@ a {
 
 .sub-content {
     text-align: center;
-    margin: 15px 475px 100px;
-	
+    margin: 15px 200px 100px;	
 }
 
 h2 {
@@ -73,21 +92,21 @@ h2 {
 }
 
 #footer {
-    border-top: 1px solid white;
+    border-top: 1px inset white;
     padding: 0.25rem;
     text-align: center;
     font-size: 11px;
 }
 
-@media only screen and (min-width: 1000px) {
-    .top-bar {
-        font-size: 18px;
+@media only screen and (min-width: 1150px) {
+    nav li a {
+        font-size: 13px;
+    }
+    .sub-content {
+        text-align: center;
+        margin: 15px 400px 100px;	
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .top-bar {
-        width: 0rem;
-        margin-left: 75%;
-    }
 }
