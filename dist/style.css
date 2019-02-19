@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #383838;
+    color: whitesmoke;
+    height: 100%;
+    min-width: 320px;
+    width: auto !important;
+}
+
+#nav-bar {
+    font-family: 'Major Mono Display', monospace;
+    width:100%;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    /* background-color: rgb(36, 140, 144); */
+}
+
+.top-bar {
+    text-align: center;
+    border: 0px solid white;
+    width: 5rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 85%;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    height:90vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#name {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 116px;
+}
+
+#job {
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.sub-content {
+    text-align: center;
+    margin: 15px 475px 100px;
+	
+}
+
+h2 {
+    font-family: 'Major Mono Display', monospace;  
+}
+
+#para-about-me {   
+    text-align:justify;
+	text-justify:inter-word;
+}
+
+#footer {
+    border-top: 1px solid white;
+    padding: 0.25rem;
+    text-align: center;
+    font-size: 11px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .top-bar {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .top-bar {
+        width: 0rem;
+        margin-left: 75%;
+    }
+}
