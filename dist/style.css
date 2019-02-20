@@ -15,7 +15,7 @@ body, html {
 
 #first {
     /*Load the image as the bg and set transparency for img only*/
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(./joe.jpg);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(./resources/joe.jpg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,11 +26,8 @@ body, html {
 #nav-bar {
     font-family: 'Major Mono Display', monospace;
     width:100%;
-    /* margin-top: 1.5rem; */
     border-bottom: 1px outset white;
-    /* padding-top: 0.5rem; */
     padding: 0.5rem 0 0 0;
-    /* background-color: rgb(36, 140, 144); */
     display: flex;
     flex-direction:column;
 }
@@ -59,7 +56,7 @@ a {
     display: flex;
     flex-direction: column;
     height:90vh;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     text-align: center;
 }
@@ -68,22 +65,33 @@ a {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     font-size: 116px;
+    color: rgb(218, 251, 251)
 }
 
-#job {
-    text-align: center;
+#job {  
     font-family: 'Major Mono Display', monospace;
     font-size: 18px;
     margin-top: -10px;
 }
 
+/*cursor for job*/
+.txt-type > .txt {
+    border-right: 0.05rem solid whitesmoke;
+}
+
 .sub-content {
     text-align: center;
-    margin: 15px 200px 100px;	
+    margin: 15px 300px 50px;	
+    font-style: italic;
+}
+
+#about-me {
+    margin-top: 50px;
 }
 
 h2 {
     font-family: 'Major Mono Display', monospace;  
+    font-weight: 200;
 }
 
 #para-about-me {   
@@ -98,15 +106,47 @@ h2 {
     font-size: 11px;
 }
 
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1200px) {
     nav li a {
         font-size: 13px;
     }
+
+    #name {
+        font-size: 136px;
+    }
+
+    #job {
+        font-size: 20px;
+    }
+
     .sub-content {
-        text-align: center;
-        margin: 15px 400px 100px;	
+        margin: 15px 400px 50px;	
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 875px) {
+    .sub-content {
+        margin: 15px 150px 50px;	
+    }
+}
+
+@media (max-width: 500px) {
+    nav li a {
+        font-size: 10px;
+    }
+
+    #name {
+        font-size: 86px;
+    }
+
+    #job {
+        font-size: 16px;
+    }
+    .sub-content {
+        margin: 15px 50px 50px;	
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 18px;    
+    }
 }
