@@ -1,3 +1,4 @@
+//Followed Brad Traversy tutorial on YT. 
 //ES6 Class
 class Typewriter {
     constructor(txtElement, words, wait = 3000) {
